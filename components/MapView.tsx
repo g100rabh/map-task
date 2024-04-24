@@ -92,7 +92,7 @@ const MapView: React.FC = () => {
   };
 
   return (
-    <div>
+    <>
       <div>
         <select value={drawType} onChange={handleDrawTypeChange}>
           <option value="Polygon">Draw Polygon</option>
@@ -101,11 +101,11 @@ const MapView: React.FC = () => {
         </select>
       </div>
       <div>
-        <div>Area: {area}</div>
-        <div>Point: {point}</div>
+        <span>Area: {area}</span>
+        <span>Point: {point}</span>
       </div>
       <div ref={mapRef} style={{ width: "100%", height: "1000px" }} />
-    </div>
+    </>
   );
 };
 
